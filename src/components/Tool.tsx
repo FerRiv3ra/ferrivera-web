@@ -8,7 +8,7 @@ export const Tool = ({ logoName }: Props) => {
   const { img, title } = imgSelector(logoName);
 
   return (
-    <div className="flex items-center text-gray-800 -px-3 dark:text-gray-200">
+    <div className="flex items-center text-gray-800 -px-3">
       <img className="w-5 h-5 mx-3" src={img} />
 
       <span className="mx-3">{title}</span>

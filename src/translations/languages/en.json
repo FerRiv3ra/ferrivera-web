@@ -1,0 +1,15 @@
+{
+  "header": {
+    "contact": "Contact",
+    "desc": "I am a highly skilled React Native and Node developer, here is my toolkit.",
+    "getInTouch": "Get in touch",
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "title": "Fullstack mobile developer"
+  },
+  "home": {},
+  "footer": {
+    "findMe": "Find me on any of these platforms.",
+    "keepInTouch": "Let's keep in touch!"
+  }
+}

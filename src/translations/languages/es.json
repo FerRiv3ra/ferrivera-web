@@ -1,0 +1,15 @@
+{
+  "header": {
+    "contact": "Contacto",
+    "desc": "Soy un desarrollador altamente calificado de React Native y Node, aquí está mi kit de herramientas.",
+    "getInTouch": "Ponerse en contacto",
+    "home": "Inicio",
+    "portfolio": "Portafolio",
+    "title": "Desarrollador móvil fullstack"
+  },
+  "home": {},
+  "footer": {
+    "findMe": "Encuéntrame en cualquiera de estas plataformas.",
+    "keepInTouch": "¡Mantengámonos en contacto!"
+  }
+}
