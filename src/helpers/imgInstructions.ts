@@ -8,7 +8,7 @@ import checkStudentsEs2 from '../assets/deletion/checkStudents/es/teacher2.png';
 import checkStudentsEs3 from '../assets/deletion/checkStudents/es/teacher3.png';
 import checkStudentsEs4 from '../assets/deletion/checkStudents/es/student.png';
 
-export const SECTIONS = {
+export const SECTIONS: any = {
   checkStudents: {
     en: {
       img1: checkStudentsEn1,
