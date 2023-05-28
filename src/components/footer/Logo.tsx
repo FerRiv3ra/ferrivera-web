@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import { imgNameType, imgSelector } from '../../helpers/imgSelector';
 
 interface Props {
@@ -7,11 +8,6 @@ interface Props {
 
 export const Logo = ({ logoName }: Props) => {
   const { img, title } = imgSelector(logoName);
-
-  // const handleClick = (route, target = '_self') => {
-  //   window.open(route, target);
-  //   return;
-  // };
 
   return (
     <Link

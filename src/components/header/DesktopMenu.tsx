@@ -1,5 +1,9 @@
-import { useTranslation } from 'react-i18next';
+import { useContext } from 'react';
+
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
+import AppContext from '../../context/AppContext';
 
 interface Props {
   isOpen: boolean;
@@ -10,13 +14,7 @@ export const DesktopMenu = ({ isOpen }: Props) => {
 
   const currentLang = i18n.language;
 
-  const handleLanguage = () => {
-    if (currentLang === 'es') {
-      i18n.changeLanguage('en');
-    } else {
-      i18n.changeLanguage('es');
-    }
-  };
+  const { toggleLanguage } = useContext(AppContext);
 
   return (
     <div
@@ -55,7 +53,7 @@ export const DesktopMenu = ({ isOpen }: Props) => {
 
         <button
           className="block font-medium text-gray-700 lg:mx-8"
-          onClick={handleLanguage}
+          onClick={toggleLanguage}
         >
           {currentLang === 'es' ? '🇪🇸' : '🇬🇧'}
         </button>

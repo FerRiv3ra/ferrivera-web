@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 import { Logo } from './Logo';
 import { imgNameType } from '../../helpers/imgSelector';
-import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
   const logos: imgNameType[] = ['github', 'linkedin', 'twitter'];
@@ -37,38 +38,24 @@ export const Footer = () => {
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                       to=""
                     >
-                      About Us
+                      About me
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      to=""
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      to=""
+                      to="https://github.com/FerRiv3ra"
+                      target="_blank"
                     >
                       Github
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      to=""
-                    >
-                      Free Products
                     </Link>
                   </li>
                 </ul>
               </div>
               <div className="w-full lg:w-4/12 px-4">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                  Other Resources
+                  Apps resources
                 </span>
                 <ul className="list-unstyled">
                   <li>
@@ -76,15 +63,7 @@ export const Footer = () => {
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                       to=""
                     >
-                      MIT License
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      to=""
-                    >
-                      Terms &amp; Conditions
+                      Account deletion
                     </Link>
                   </li>
                   <li>
@@ -93,14 +72,6 @@ export const Footer = () => {
                       to="apps-privacy-policy"
                     >
                       Privacy Policy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      to=""
-                    >
-                      Contact Us
                     </Link>
                   </li>
                 </ul>

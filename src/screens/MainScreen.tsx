@@ -1,14 +1,10 @@
 import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+
 import { PersonalInfo } from '../components/PersonalInfo';
 
 export const MainScreen = () => {
-  const { i18n } = useTranslation();
-
   useEffect(() => {
-    const lang = window.navigator.language;
-
-    i18n.changeLanguage(lang.slice(0, 2));
+    window.scrollTo(0, 0);
   }, []);
 
   return (

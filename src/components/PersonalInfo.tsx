@@ -1,15 +1,16 @@
-import { Tool } from './Tool';
-import { imgNameType } from '../helpers/imgSelector';
-import mainPhoto from '../assets/mainPhoto.jpg';
 import { useTranslation } from 'react-i18next';
+
+import { Tool } from './Tool';
+import mainPhoto from '../assets/mainPhoto.jpg';
+import { imgNameType } from '../helpers/imgSelector';
 
 export const PersonalInfo = () => {
   const tools: imgNameType[] = [
-    'git',
     'react',
-    'node',
     'typescript',
     'javascript',
+    'node',
+    'git',
     'vsCode',
   ];
 
@@ -20,9 +21,9 @@ export const PersonalInfo = () => {
       <div className="w-full lg:w-1/2">
         <div className="lg:max-w-lg">
           <h1 className="text-3xl font-semibold tracking-wide text-gray-800 lg:text-4xl">
-            {t('header.title')}
+            {t('home.title')}
           </h1>
-          <p className="mt-4 text-gray-600">{t('header.desc')}</p>
+          <p className="mt-4 text-gray-600">{t('home.desc')}</p>
           <div className="grid gap-6 mt-8 sm:grid-cols-2">
             {tools.map((tool, index) => (
               <Tool key={index} logoName={tool} />
