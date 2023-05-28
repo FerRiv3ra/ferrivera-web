@@ -38,13 +38,6 @@ export const DesktopMenu = ({ isOpen }: Props) => {
         </Link>
 
         <Link
-          className="block font-medium text-gray-700 lg:mx-8 hover:text-gray-900 hover:underline"
-          to="contact"
-        >
-          {t('header.contact')}
-        </Link>
-
-        <Link
           to="get-in-touch"
           className="flex items-center justify-center px-5 py-2 text-sm font-medium tracking-wide text-center text-white capitalize transition-colors duration-300 transform bg-gray-700 rounded-lg hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
         >

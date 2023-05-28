@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 
-import { PersonalInfo } from '../components/PersonalInfo';
+import { PersonalInfo } from '../components/home/PersonalInfo';
+import { PortfolioPreview } from '../components/home/PortfolioPreview';
 
 export const MainScreen = () => {
   useEffect(() => {
@@ -8,8 +9,10 @@ export const MainScreen = () => {
   }, []);
 
   return (
-    <div className="mt-12 lg:mt-10">
+    <div className="my-12 lg:mt-10">
       <PersonalInfo />
+
+      <PortfolioPreview />
     </div>
   );
 };

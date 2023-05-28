@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 
 import { Tool } from './Tool';
-import mainPhoto from '../assets/mainPhoto.jpg';
-import { imgNameType } from '../helpers/imgSelector';
+import mainPhoto from '../../assets/mainPhoto.jpg';
+import { imgNameType } from '../../helpers/imgSelector';
 
 export const PersonalInfo = () => {
   const tools: imgNameType[] = [

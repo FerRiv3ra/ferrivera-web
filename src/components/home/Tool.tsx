@@ -1,4 +1,4 @@
-import { imgNameType, imgSelector } from '../helpers/imgSelector';
+import { imgNameType, imgSelector } from '../../helpers/imgSelector';
 
 interface Props {
   logoName: imgNameType;

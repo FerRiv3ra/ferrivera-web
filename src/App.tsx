@@ -6,11 +6,13 @@ import i18n from './translations/in18Config';
 import PublicLayout from './layout/PublicLayout';
 import { MainScreen } from './screens/MainScreen';
 import { Portfolio } from './screens/Portfolio';
-import { Contact } from './screens/Contact';
 import { GetInTouch } from './screens/GetInTouch';
 import { PrivacyPolicy } from './screens/PrivacyPolicy';
 import { NotFound } from './screens/NotFound';
 import { AppProvider } from './context/AppContext';
+import { AccountDeletion } from './screens/AccountDeletion';
+import { AboutMe } from './screens/AboutMe';
+import { DeletionIntructions } from './screens/DeletionIntructions';
 
 const App = () => {
   return (
@@ -21,7 +23,12 @@ const App = () => {
             <Route path="/" element={<PublicLayout />}>
               <Route index element={<MainScreen />} />
               <Route path="portfolio" element={<Portfolio />} />
-              <Route path="contact" element={<Contact />} />
+              <Route path="about-me" element={<AboutMe />} />
+              <Route path="account-deletion" element={<AccountDeletion />} />
+              <Route
+                path="account-deletion/:app"
+                element={<DeletionIntructions />}
+              />
               <Route path="get-in-touch" element={<GetInTouch />} />
               <Route path="apps-privacy-policy" element={<PrivacyPolicy />} />
               <Route path="*" element={<NotFound />} />

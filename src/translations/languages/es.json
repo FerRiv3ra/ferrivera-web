@@ -7,11 +7,21 @@
   },
   "home": {
     "desc": "Soy un desarrollador altamente calificado de React Native y Node, aquí está mi kit de herramientas.",
-    "title": "Desarrollador móvil fullstack"
+    "title": "Desarrollador móvil fullstack",
+    "portTitle": "Te invito a ver mi Portafolio",
+    "portBy": "Por FerRivera",
+    "portDesc": "A través del tiempo que llevo en desarrollo, he realizado algunos proyectos de práctica, freelace y algunos personales.",
+    "portClick": "Haga clic en esta tajeta para ver el portafolio"
   },
   "footer": {
     "findMe": "Encuéntrame en cualquiera de estas plataformas.",
-    "keepInTouch": "¡Mantengámonos en contacto!"
+    "keepInTouch": "¡Mantengámonos en contacto!",
+    "usefulLinks": "Enlaces útiles",
+    "appsResources": "Recursos de apps",
+    "aboutMe": "Acerca de mí",
+    "accountDeletion": "Eliminación de cuenta",
+    "privacyPolicy": "Política de privacidad",
+    "copyright": "Derechos reservados"
   },
   "404": {
     "error": "Error 404",
@@ -34,5 +44,29 @@
     "i9": "Fernando Rivera Aplicaciones, no Apple o Google, ofrece soporte técnico vía correo electrónico",
     "msg": "Para más información acerca de esta política de privacidad, me puedes contactar a través del correo electrónico",
     "email": "bittech.hn@gmail.com"
+  },
+  "deletion": {
+    "initial": "Eliminación",
+    "text": "de cuentas",
+    "seeInstructions": "Ver instrucciones"
+  },
+  "theVineApp": {
+    "instructions": "Instrucciones",
+    "desc": "Para eliminar su cuenta vinculada a la aplicación, debe comunicarse con la gerente de operaciones, enviando la solicitud al correo tracey.ashton@thevinecentre.org.uk",
+    "retainedOrDeletedData": "Datos a conservar",
+    "retainedOrDeletedDataMsg": "Basado en la política de privacidad propia  de The Vine Centre, es posible que no pueda eliminar todos los datos (por ejemplo, cuando los datos están vinculados a transacciones financieras que deben conservarse durante un período determinado de tiempo bajo las regulaciones financieras).",
+    "link": "Enlace a su política de privacidad"
+  },
+  "checkStudents": {
+    "instructions": "Instrucciones",
+    "desc": "Para eliminar su cuenta vinculada a la aplicación, usted debe entrar con sus credenciales y en el panel principal presionar sobre el ícono de configuración, luego eliminar su cuenta (le solicitará confirmación), si usted es estudiante, usted deberá solicitar su eliminación a cualquiera de los maestros registrados.",
+    "retainedOrDeletedData": "Datos a eliminar",
+    "retainedOrDeletedDataMsg": "Se eliminarán todos sus datos, incluyendo:",
+    "i1": "Su acceso a la aplicación.",
+    "i2": "Todas las asignaturas que usted haya creado.",
+    "i3": "Todos los reportes que usted haya creado.",
+    "link": "Enlace a su política de privacidad",
+    "retained": "Datos a conservar",
+    "retainedMsg": "Se conservará únicamente los estudiantes que usted haya agregado ya que es posible que este vinculado con otro maestro, sin embargo si el estudiante mantiene inactividad por 180 días, se eliminará su cuenta."
   }
 }

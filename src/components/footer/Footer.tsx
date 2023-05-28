@@ -30,15 +30,15 @@ export const Footer = () => {
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                  Useful Links
+                  {t('footer.usefulLinks')}
                 </span>
                 <ul className="list-unstyled">
                   <li>
                     <Link
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      to=""
+                      to="about-me"
                     >
-                      About me
+                      {t('footer.aboutMe')}
                     </Link>
                   </li>
 
@@ -55,15 +55,15 @@ export const Footer = () => {
               </div>
               <div className="w-full lg:w-4/12 px-4">
                 <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                  Apps resources
+                  {t('footer.appsResources')}
                 </span>
                 <ul className="list-unstyled">
                   <li>
                     <Link
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      to=""
+                      to="account-deletion"
                     >
-                      Account deletion
+                      {t('footer.accountDeletion')}
                     </Link>
                   </li>
                   <li>
@@ -71,7 +71,7 @@ export const Footer = () => {
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                       to="apps-privacy-policy"
                     >
-                      Privacy Policy
+                      {t('footer.privacyPolicy')}
                     </Link>
                   </li>
                 </ul>
@@ -83,7 +83,7 @@ export const Footer = () => {
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-blueGray-500 font-semibold py-1">
-              Copyright ©{' '}
+              {t('footer.copyright')} ©{' '}
               <span id="get-current-year">{new Date().getFullYear()}</span>
               <Link
                 to={'/'}

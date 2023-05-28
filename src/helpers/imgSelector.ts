@@ -7,6 +7,8 @@ import github from '../assets/logos/github.png';
 import linkedin from '../assets/logos/linkedin.png';
 import twitter from '../assets/logos/twitter.png';
 import vsCode from '../assets/logos/vs-code.png';
+import checkStudents from '../assets/apps/checkstudents.png';
+import theVineApp from '../assets/apps/the-vine-app.png';
 
 export type imgNameType =
   | 'git'
@@ -17,7 +19,9 @@ export type imgNameType =
   | 'github'
   | 'linkedin'
   | 'twitter'
-  | 'vsCode';
+  | 'vsCode'
+  | 'checkStudents'
+  | 'theVineApp';
 
 export const imgSelector = (imgName: imgNameType) => {
   const selector = {
@@ -30,6 +34,8 @@ export const imgSelector = (imgName: imgNameType) => {
     github,
     linkedin,
     twitter,
+    checkStudents,
+    theVineApp,
   };
 
   const title = {
@@ -42,6 +48,8 @@ export const imgSelector = (imgName: imgNameType) => {
     github: 'https://github.com/FerRiv3ra',
     linkedin: 'https://www.linkedin.com/in/ferriv3ra/',
     twitter: 'https://twitter.com/FerRiv3ra',
+    checkStudents: 'CheckStudents',
+    theVineApp: 'The Vine Centre',
   };
 
   return {

@@ -7,11 +7,21 @@
   },
   "home": {
     "desc": "I am a highly skilled React Native and Node developer, here is my toolkit.",
-    "title": "Fullstack mobile developer"
+    "title": "Fullstack mobile developer",
+    "portTitle": "I invite you to see my portfolio",
+    "portBy": "By FerRivera",
+    "portDesc": "Through the time that I have been developing, I have done some practice projects, freelace and some personal ones.",
+    "portClick": "Click on this card to see the portfolio"
   },
   "footer": {
     "findMe": "Find me on any of these platforms.",
-    "keepInTouch": "Let's keep in touch!"
+    "keepInTouch": "Let's keep in touch!",
+    "usefulLinks": "Useful links",
+    "appsResources": "Apps resources",
+    "aboutMe": "About me",
+    "accountDeletion": "Account deletion",
+    "privacyPolicy": "Privacy policy",
+    "copyright": "Copyright"
   },
   "404": {
     "error": "404 error",
@@ -34,5 +44,29 @@
     "i9": "Fernando Rivera Applications, not Apple or Google, offers technical support via email",
     "msg": "For more information about this privacy policy, you can contact me by email",
     "email": "bittech.hn@gmail.com"
+  },
+  "deletion": {
+    "initial": "Account",
+    "text": "deletion",
+    "seeInstructions": "See instructions"
+  },
+  "theVineApp": {
+    "instructions": "Instructions",
+    "desc": "To delete your account linked to the app, you must contact the operations manager, sending the request to tracey.ashton@thevinecentre.org.uk",
+    "retainedData": "Data to be retained",
+    "retainedDataMsg": "Based on The Vine Center's own privacy policy, you may not be able to delete all data (for example, where the data is linked to financial transactions that must be retained for a certain period of time under financial regulations).",
+    "link": "Link to their privacy policy"
+  },
+  "checkStudents": {
+    "instructions": "Instructions",
+    "desc": "To delete your account linked to the application, you must enter with your credentials and in the main panel click on the configuration icon, then delete your account (it will ask you for confirmation), if you are a student, you must request its deletion to any of registered teachers.",
+    "retainedData": "Data to be deleted",
+    "retainedDataMsg": "Based on The Vine Center's own privacy policy, you may not be able to delete all data (for example, where the data is linked to financial transactions that must be retained for a certain period of time under financial regulations).",
+    "i1": "Your access to the application.",
+    "i2": "All subjects that you have created.",
+    "i3": "All reports you have created.",
+    "link": "Link to their privacy policy",
+    "retained": "Data to be retained",
+    "retainedMsg": "Only the students that you have added will be kept since it is possible that you are linked to another teacher, however if the student remains inactive for 180 days, your account will be deleted."
   }
 }
