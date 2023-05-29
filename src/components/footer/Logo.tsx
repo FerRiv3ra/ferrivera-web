@@ -13,10 +13,10 @@ export const Logo = ({ logoName }: Props) => {
     <Link
       to={title}
       target="_blank"
-      className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+      className="bg-white shadow-lg h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
       type="button"
     >
-      <img src={img} alt={logoName} className="p-2" />
+      <img src={img} alt={logoName} className="p-2 h-10 w-10" />
     </Link>
   );
 };
