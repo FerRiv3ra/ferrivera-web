@@ -96,5 +96,10 @@
   "aboutMe": {
     "aboutMe": "Acerca de mí",
     "description": "Soy un desarrollador altamente calificado de React Native y Node con más de 2 años de experiencia en el desarrollo de aplicaciones móviles y aplicaciones web multiplataforma. Me destaco en el desarrollo móvil utilizando React Native con Javascript o Typescript, y tengo experiencia con tecnologías de back-end como Express.js y MongoDB. Tengo sólidos conocimientos en RESTful API. Soy un solucionador de problemas dedicado y un jugador de equipo, con pasión por aprender y estar al día con las últimas tecnologías."
+  },
+  "contactMe": {
+    "social": "Sígueme en",
+    "email": "Envíame un correo electrónico",
+    "open": "Abrir"
   }
 }

@@ -4,15 +4,15 @@ import { I18nextProvider } from 'react-i18next';
 
 import i18n from './translations/in18Config';
 import PublicLayout from './layout/PublicLayout';
-import { MainScreen } from './screens/MainScreen';
-import { Portfolio } from './screens/Portfolio';
-import { GetInTouch } from './screens/GetInTouch';
-import { PrivacyPolicy } from './screens/PrivacyPolicy';
-import { NotFound } from './screens/NotFound';
+import { MainScreen } from './pages/MainScreen';
+import { Portfolio } from './pages/Portfolio';
+import { GetInTouch } from './pages/GetInTouch';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { NotFound } from './pages/NotFound';
 import { AppProvider } from './context/AppContext';
-import { AccountDeletion } from './screens/AccountDeletion';
-import { AboutMe } from './screens/AboutMe';
-import { DeletionIntructions } from './screens/DeletionIntructions';
+import { AccountDeletion } from './pages/AccountDeletion';
+import { AboutMe } from './pages/AboutMe';
+import { DeletionIntructions } from './pages/DeletionIntructions';
 
 const App = () => {
   return (

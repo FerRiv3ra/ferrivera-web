@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-
 import { imgNameType, imgSelector } from '../../helpers/imgSelector';
 
 interface Props {
