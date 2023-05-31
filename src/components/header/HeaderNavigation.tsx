@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 import { MobileMenu } from './MobileMenu';
 import { DesktopMenu } from './DesktopMenu';
-import frLogo from '../../assets/FRLogo2.png';
 
 export const HeaderNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +13,11 @@ export const HeaderNavigation = () => {
       <div className="container px-6 py-6 mx-auto lg:flex lg:justify-between lg:items-center">
         <div className="flex items-center justify-between">
           <Link to="/">
-            <img className="w-auto h-6 sm:h-8" src={frLogo} alt="" />
+            <img
+              className="w-auto h-6 sm:h-8"
+              src="https://res.cloudinary.com/fercloudinary/image/upload/v1685546396/FerRivera%20Web/FRLogo2_enoe4d.png"
+              alt=""
+            />
           </Link>
 
           <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />

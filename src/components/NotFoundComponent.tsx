@@ -1,8 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import imgNotFound from '../assets/not-found.png';
-
 export const NotFoundComponent = () => {
   const { t } = useTranslation();
 
@@ -52,7 +50,7 @@ export const NotFoundComponent = () => {
       <div className="relative w-full mt-12 lg:w-1/2 lg:mt-0">
         <img
           className="w-full max-w-lg lg:mx-auto"
-          src={imgNotFound}
+          src="https://res.cloudinary.com/fercloudinary/image/upload/v1685546396/FerRivera%20Web/not-found_w9qhcz.png"
           alt="Not found image"
         />
       </div>

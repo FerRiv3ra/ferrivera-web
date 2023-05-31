@@ -68,5 +68,29 @@
     "link": "Enlace a su política de privacidad",
     "retained": "Datos a conservar",
     "retainedMsg": "Se conservará únicamente los estudiantes que usted haya agregado ya que es posible que este vinculado con otro maestro, sin embargo si el estudiante mantiene inactividad por 180 días, se eliminará su cuenta."
+  },
+  "portfolio": {
+    "appMovil": "App móvil",
+    "backend": "Servidor Backend",
+    "web": "Aplicaciones Web",
+    "url": "Abrir web",
+    "docsUrl": "Ver documentación",
+    "github": "GitHub",
+    "playstore": "PlayStore",
+    "appstore": "AppStore",
+    "technologies": "Tecnologías"
+  },
+  "projectDescription": {
+    "theVineApp": "Aplicación móvil para administrar las visitas al community cupboard mediante códigos QR.",
+    "iFootSchedule": "Aplicación para seguir los partidos de la liga de campeones y la copa mundial de fútbol.",
+    "checkStudents": "Aplicación móvil para verificación de asistencia de estudiantes mediante códigos QR.",
+    "betterLists": "Aplicación móvil para crear dos tipo de listas Lista de compras: crea y agrupa por categoría, agrega el precio y obtén el total, además ordena por precio o por nombre; Lista de cosas por hacer: no necesitas agregar categorías y agrega un ícono personalizado.",
+    "theVineBackend": "Características: CRUD de de usuarios, verificación en dos pasos para ingreso de administradores, recuperación de contraseña, generar reportes en PDF y XLXS, subida de imágenes y envío de reportes vía correo electrónico.",
+    "checkStudentsBackend": "Características: CRUD de de maestros y estudiantes, recuperación de contraseña, generar reportes en XLXS, envío de reportes vía correo electrónico.",
+    "merakiBackend": "Características: CRUD de de usuarios, manejo de roles, recuperación de contraseña, generación de cupones, subida de imágenes y envío de correos electrónicos.",
+    "eCommerceBootCamp": "Características: CRUD de de usuarios, autenticación con Google, manejo de roles, recuperación de contraseña, administración de pagos mediante Stripe, subida de imágenes y envío de correos electrónicos.",
+    "theVineManager": "Aplicación web para administrar las visitas al community cupboard y visualizar reportes.",
+    "merakiWeb": "Aplicación web para administrar la web mediante panel de administración, canje y creación de cupones",
+    "ferriveraWeb": "Ésta web, mi portafolio"
   }
 }

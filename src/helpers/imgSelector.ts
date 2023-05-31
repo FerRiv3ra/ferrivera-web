@@ -1,15 +1,3 @@
-import git from '../assets/logos/git.png';
-import react from '../assets/logos/react.png';
-import node from '../assets/logos/nodejs.png';
-import typescript from '../assets/logos/typescript.png';
-import javascript from '../assets/logos/javascript.png';
-import github from '../assets/logos/github.png';
-import linkedin from '../assets/logos/linkedin.png';
-import twitter from '../assets/logos/twitter.png';
-import vsCode from '../assets/logos/vs-code.png';
-import checkStudents from '../assets/apps/checkstudents.png';
-import theVineApp from '../assets/apps/the-vine-app.png';
-
 export type imgNameType =
   | 'git'
   | 'react'
@@ -25,17 +13,26 @@ export type imgNameType =
 
 export const imgSelector = (imgName: imgNameType) => {
   const selector = {
-    git,
-    react,
-    node,
-    typescript,
-    javascript,
-    vsCode,
-    github,
-    linkedin,
-    twitter,
-    checkStudents,
-    theVineApp,
+    git: 'https://res.cloudinary.com/fercloudinary/image/upload/v1685546566/FerRivera%20Web/Logos/github_xtn3ym.png',
+    react:
+      'https://res.cloudinary.com/fercloudinary/image/upload/v1685546566/FerRivera%20Web/Logos/react_v6ecru.png',
+    node: 'https://res.cloudinary.com/fercloudinary/image/upload/v1685546566/FerRivera%20Web/Logos/nodejs_nau5nv.png',
+    typescript:
+      'https://res.cloudinary.com/fercloudinary/image/upload/v1685546566/FerRivera%20Web/Logos/typescript_ujr1ni.png',
+    javascript:
+      'https://res.cloudinary.com/fercloudinary/image/upload/v1685546566/FerRivera%20Web/Logos/javascript_ks3wca.png',
+    vsCode:
+      'https://res.cloudinary.com/fercloudinary/image/upload/v1685546566/FerRivera%20Web/Logos/vs-code_v2llb1.png',
+    github:
+      'https://res.cloudinary.com/fercloudinary/image/upload/v1685546566/FerRivera%20Web/Logos/github_xtn3ym.png',
+    linkedin:
+      'https://res.cloudinary.com/fercloudinary/image/upload/v1685546566/FerRivera%20Web/Logos/linkedin_iqhcwi.png',
+    twitter:
+      'https://res.cloudinary.com/fercloudinary/image/upload/v1685546566/FerRivera%20Web/Logos/twitter_vqmfkr.png',
+    checkStudents:
+      'https://res.cloudinary.com/fercloudinary/image/upload/v1685546455/FerRivera%20Web/BannerApps/checkstudents_kuoabx.png',
+    theVineApp:
+      'https://res.cloudinary.com/fercloudinary/image/upload/v1685546455/FerRivera%20Web/BannerApps/the-vine-app_lb57dr.png',
   };
 
   const title = {

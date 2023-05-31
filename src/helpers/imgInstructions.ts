@@ -1,26 +1,16 @@
-import checkStudentsEn1 from '../assets/deletion/checkStudents/en/teacher1.png';
-import checkStudentsEn2 from '../assets/deletion/checkStudents/en/teacher2.png';
-import checkStudentsEn3 from '../assets/deletion/checkStudents/en/teacher3.png';
-import checkStudentsEn4 from '../assets/deletion/checkStudents/en/student.png';
-
-import checkStudentsEs1 from '../assets/deletion/checkStudents/es/teacher1.png';
-import checkStudentsEs2 from '../assets/deletion/checkStudents/es/teacher2.png';
-import checkStudentsEs3 from '../assets/deletion/checkStudents/es/teacher3.png';
-import checkStudentsEs4 from '../assets/deletion/checkStudents/es/student.png';
-
 export const SECTIONS: any = {
   checkStudents: {
     en: {
-      img1: checkStudentsEn1,
-      img2: checkStudentsEn2,
-      img3: checkStudentsEn3,
-      img4: checkStudentsEn4,
+      img1: 'https://res.cloudinary.com/fercloudinary/image/upload/v1685546535/FerRivera%20Web/Deletion/checkStudents/EN/teacher1_grt7rv.png',
+      img2: 'https://res.cloudinary.com/fercloudinary/image/upload/v1685546535/FerRivera%20Web/Deletion/checkStudents/EN/teacher2_ewlech.png',
+      img3: 'https://res.cloudinary.com/fercloudinary/image/upload/v1685546535/FerRivera%20Web/Deletion/checkStudents/EN/teacher3_ctpzs8.png',
+      img4: 'https://res.cloudinary.com/fercloudinary/image/upload/v1685546535/FerRivera%20Web/Deletion/checkStudents/EN/student_ctglrp.png',
     },
     es: {
-      img1: checkStudentsEs1,
-      img2: checkStudentsEs2,
-      img3: checkStudentsEs3,
-      img4: checkStudentsEs4,
+      img1: 'https://res.cloudinary.com/fercloudinary/image/upload/v1685546524/FerRivera%20Web/Deletion/checkStudents/ES/teacher1_khequ4.png',
+      img2: 'https://res.cloudinary.com/fercloudinary/image/upload/v1685546524/FerRivera%20Web/Deletion/checkStudents/ES/teacher2_wmakln.png',
+      img3: 'https://res.cloudinary.com/fercloudinary/image/upload/v1685546524/FerRivera%20Web/Deletion/checkStudents/ES/teacher3_l4eul4.png',
+      img4: 'https://res.cloudinary.com/fercloudinary/image/upload/v1685546524/FerRivera%20Web/Deletion/checkStudents/ES/student_q40gnp.png',
     },
   },
 };

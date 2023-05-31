@@ -1,15 +1,17 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
-import checkStudentsImg from '../../assets/logos/checkStudents.png';
-import theVineAppImg from '../../assets/logos/theVineApp.png';
 import { ImageInstructions } from './ImageInstructions';
+import { useBannerSelector } from '../../hooks/useIconSelector';
 
 export type appIdType = {
   appId: string;
 };
 
 export const Instructions = ({ appId }: appIdType) => {
+  const theVineAppImg = useBannerSelector('TheVineApp');
+  const checkStudentsImg = useBannerSelector('checkStudents');
+
   const { t } = useTranslation();
 
   const items = ['i1', 'i2', 'i3'];

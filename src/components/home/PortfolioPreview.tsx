@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom';
 
 import { useTranslation } from 'react-i18next';
 
-import profilePic from '../../assets/profile.jpg';
-
 export const PortfolioPreview = () => {
   const { t } = useTranslation();
 
@@ -27,7 +25,7 @@ export const PortfolioPreview = () => {
         <div className="flex-shrink-0 hidden ml-3 sm:block">
           <img
             className="object-cover w-16 h-16 rounded-lg shadow-sm"
-            src={profilePic}
+            src="https://res.cloudinary.com/fercloudinary/image/upload/v1685546396/FerRivera%20Web/profile_fh6l1u.jpg"
             alt="FerRivera profile picture"
           />
         </div>

@@ -1,40 +1,50 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-export const Project = () => {
+import { projectType } from '../../data/portfolioData';
+import { Button } from './Button';
+import { useBannerSelector } from '../../hooks/useBannerSelector';
+
+interface Props {
+  project: projectType;
+}
+
+export const Project = ({ project }: Props) => {
+  const { t } = useTranslation();
+  const projectBanner = useBannerSelector(project.id);
+
   return (
     <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
       <div className="rounded-lg h-64 overflow-hidden">
         <img
           alt="content"
           className="object-cover object-center h-full w-full"
-          src="https://dummyimage.com/1203x503"
+          src={projectBanner}
         />
       </div>
       <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-        Shooting Stars
+        {project.name}
       </h2>
       <p className="text-base leading-relaxed mt-2">
-        Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed.
-        Gastropub street art beard dreamcatcher neutra, ethical XOXO
-        lumbersexual.
+        {t(`projectDescription.${project.id}`)}
       </p>
-      <Link
-        to=""
-        className="text-blue-950 hover:text-blue-900 inline-flex items-center mt-3"
-      >
-        Learn More
-        <svg
-          fill="none"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          className="w-4 h-4 ml-2"
-          viewBox="0 0 24 24"
-        >
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </Link>
+      <p className="text-gray-900 text-lg my-2">
+        {t('portfolio.technologies')}:
+      </p>
+      <ul className="list-disc ml-5">
+        {project.technologies.map((tech) => (
+          <li key={tech}>{tech}</li>
+        ))}
+      </ul>
+      <div className="flex flex-col w-full gap-y-5 mt-5">
+        {project.github && <Button type="github" url={project.github} />}
+        {project.url && <Button type="url" url={project.url} />}
+        {project.docsUrl && <Button type="docsUrl" url={project.docsUrl} />}
+        {project.playstore && (
+          <Button type="playstore" url={project.playstore} />
+        )}
+        {project.appstore && <Button type="appstore" url={project.appstore} />}
+      </div>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
 import { Tool } from './Tool';
-import mainPhoto from '../../assets/mainPhoto.jpg';
 import { imgNameType } from '../../helpers/imgSelector';
 
 export const PersonalInfo = () => {
@@ -35,7 +34,7 @@ export const PersonalInfo = () => {
       <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
         <img
           className="object-cover w-full h-full max-w-2xl rounded-md"
-          src={mainPhoto}
+          src="https://res.cloudinary.com/fercloudinary/image/upload/v1685546396/FerRivera%20Web/mainPhoto_gspdi0.jpg"
           alt="glasses photo"
         />
       </div>

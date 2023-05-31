@@ -53,20 +53,44 @@
   "theVineApp": {
     "instructions": "Instructions",
     "desc": "To delete your account linked to the app, you must contact the operations manager, sending the request to tracey.ashton@thevinecentre.org.uk",
-    "retainedData": "Data to be retained",
-    "retainedDataMsg": "Based on The Vine Center's own privacy policy, you may not be able to delete all data (for example, where the data is linked to financial transactions that must be retained for a certain period of time under financial regulations).",
+    "retainedOrDeletedData": "Data to be retained",
+    "retainedOrDeletedDataMsg": "Based on The Vine Center's own privacy policy, you may not be able to delete all data (for example, where the data is linked to financial transactions that must be retained for a certain period of time under financial regulations).",
     "link": "Link to their privacy policy"
   },
   "checkStudents": {
     "instructions": "Instructions",
     "desc": "To delete your account linked to the application, you must enter with your credentials and in the main panel click on the configuration icon, then delete your account (it will ask you for confirmation), if you are a student, you must request its deletion to any of registered teachers.",
-    "retainedData": "Data to be deleted",
-    "retainedDataMsg": "Based on The Vine Center's own privacy policy, you may not be able to delete all data (for example, where the data is linked to financial transactions that must be retained for a certain period of time under financial regulations).",
+    "retainedOrDeletedData": "Data to be deleted",
+    "retainedOrDeletedDataMsg": "All your data will be deleted, including:",
     "i1": "Your access to the application.",
     "i2": "All subjects that you have created.",
     "i3": "All reports you have created.",
     "link": "Link to their privacy policy",
     "retained": "Data to be retained",
     "retainedMsg": "Only the students that you have added will be kept since it is possible that you are linked to another teacher, however if the student remains inactive for 180 days, your account will be deleted."
+  },
+  "portfolio": {
+    "appMovil": "Mobile App",
+    "backend": "Backend Server",
+    "web": "Web App",
+    "url": "Open web",
+    "docsUrl": "See docs",
+    "github": "GitHub",
+    "playstore": "PlayStore",
+    "appstore": "AppStore",
+    "technologies": "Technologies"
+  },
+  "projectDescription": {
+    "theVineApp": "Mobile app to manage community cupboard visits via QR codes.",
+    "iFootSchedule": "Application to follow the Champions League and World Cup soccer matches.",
+    "checkStudents": "Mobile application to verify student attendance using QR codes.",
+    "betterLists": "Mobile app to create two types of lists Shopping list: create and group by category, add price and get total, also sort by price or name; To-do list: no need to add categories and add a custom icon.",
+    "theVineBackend": "Features: CRUD for users, two-step verification for administrator login, password recovery, generate reports in PDF and XLXS, upload images and send reports via email.",
+    "checkStudentsBackend": "Features: CRUD for teachers and students, password recovery, generate reports in XLXS, send reports via email.",
+    "merakiBackend": "Features: user CRUD, role management, password recovery, coupon generation, image upload and email sending.",
+    "eCommerceBootCamp": "Features: User CRUD, Google authentication, role management, password recovery, Stripe payment management, image upload and email sending.",
+    "theVineManager": "Web application to manage visits to the community cupboard and view reports.",
+    "merakiWeb": "Web application to manage the web through administration panel, redemption and creation of coupons",
+    "ferriveraWeb": "This website, my portfolio"
   }
 }
