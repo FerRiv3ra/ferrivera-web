@@ -92,5 +92,9 @@
     "theVineManager": "Web application to manage visits to the community cupboard and view reports.",
     "merakiWeb": "Web application to manage the web through administration panel, redemption and creation of coupons",
     "ferriveraWeb": "This website, my portfolio"
+  },
+  "aboutMe": {
+    "aboutMe": "About me",
+    "description": "I am a highly skilled React Native and Node developer with more than 2 years of experience developing cross-platform mobile apps and web apps. I excel at mobile development using React Native with Javascript or Typescript, and have experience with back-end technologies like Express.js and MongoDB. I have solid knowledge in RESTful API. I am a dedicated problem solver and team player, with a passion for learning and staying up to date with the latest technologies."
   }
 }
