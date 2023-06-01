@@ -4,13 +4,13 @@ export const AboutMeComponent = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white">
       <div className="relative flex">
-        <div className="min-h-screen lg:w-1/3"></div>
-        <div className="hidden w-3/4 min-h-screen bg-gray-100 dark:bg-gray-800 lg:block"></div>
+        <div className="min-h-screen lg:w-1/3" />
+        <div className="hidden w-3/4 min-h-screen bg-gray-100 lg:block"></div>
 
         <div className="container flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
-          <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
+          <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
             Fernando <span className="text-blue-800">Rivera</span> <br />
           </h1>
 
@@ -22,11 +22,11 @@ export const AboutMeComponent = () => {
             />
 
             <div className="mt-8 lg:px-10 lg:mt-0">
-              <h1 className="text-2xl font-semibold text-gray-800 dark:text-white lg:w-72">
+              <h1 className="text-2xl font-semibold text-gray-800 lg:w-72">
                 {t('aboutMe.aboutMe')}
               </h1>
 
-              <p className="max-w-lg mt-6 text-gray-500 dark:text-gray-400">
+              <p className="max-w-lg mt-6 text-gray-500">
                 {t('aboutMe.description')}
               </p>
             </div>
