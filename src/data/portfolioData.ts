@@ -73,7 +73,7 @@ export const portfolioData: portfolioType[] = [
         appstore: 'https://apps.apple.com/us/app/checkstudents/id6443751412',
         technologies: [
           'React Native',
-          'JavaScript',
+          'TypeScript',
           'Axios',
           'FontAwesome',
           'React Navigation',
