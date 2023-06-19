@@ -1,4 +1,4 @@
-export const useBannerSelector = (type: 'TheVineApp' | 'checkStudents') => {
+export const useIconSelector = (type: 'TheVineApp' | 'checkStudents') => {
   const imgUrl =
     type === 'checkStudents'
       ? 'https://res.cloudinary.com/fercloudinary/image/upload/v1685546566/FerRivera%20Web/Logos/checkStudents_kfca66.png'

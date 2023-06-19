@@ -1,16 +1,14 @@
 import { useTranslation } from 'react-i18next';
 
-import { projectType } from '../../data/portfolioData';
 import { Button } from './Button';
-import { useBannerSelector } from '../../hooks/useBannerSelector';
+import { Project as ProjectType } from '../../types/portfolio';
 
 interface Props {
-  project: projectType;
+  project: ProjectType;
 }
 
 export const Project = ({ project }: Props) => {
   const { t } = useTranslation();
-  const projectBanner = useBannerSelector(project.id);
 
   return (
     <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -18,14 +16,14 @@ export const Project = ({ project }: Props) => {
         <img
           alt="content"
           className="object-cover object-center h-full w-full"
-          src={projectBanner}
+          src={project.bannerUrl}
         />
       </div>
       <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
         {project.name}
       </h2>
       <p className="text-base leading-relaxed mt-2">
-        {t(`projectDescription.${project.id}`)}
+        {t(`projectDescription.${project.textId}`)}
       </p>
       <p className="text-gray-900 text-lg my-2">
         {t('portfolio.technologies')}:

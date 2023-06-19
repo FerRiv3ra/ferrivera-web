@@ -1,14 +1,21 @@
-import { createContext, useEffect } from 'react';
+import { createContext, useEffect, useState } from 'react';
 
 import i18n from '../translations/in18Config';
+import { PortfolioResponse, Project } from '../types/portfolio';
+import { axiosClient } from '../config/axiosClient';
 
 type AppContextProps = {
+  projects: Project[];
+  loading: boolean;
   toggleLanguage: () => void;
 };
 
 const AppContext = createContext({} as AppContextProps);
 
 export const AppProvider = ({ children }: any) => {
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const userLangStg = localStorage.getItem('userLang');
 
@@ -20,6 +27,10 @@ export const AppProvider = ({ children }: any) => {
       localStorage.setItem('navLang', navLang);
       i18n.changeLanguage(navLang);
     }
+  }, []);
+
+  useEffect(() => {
+    getProjects();
   }, []);
 
   const toggleLanguage = () => {
@@ -34,9 +45,24 @@ export const AppProvider = ({ children }: any) => {
     }
   };
 
+  const getProjects = async () => {
+    try {
+      const { data } = await axiosClient.get<PortfolioResponse>(
+        '/portfolio/projects'
+      );
+
+      setProjects(data.projects);
+      setLoading(false);
+    } catch (error: any) {
+      console.log(error);
+    }
+  };
+
   return (
     <AppContext.Provider
       value={{
+        projects,
+        loading,
         toggleLanguage,
       }}
     >

@@ -70,9 +70,9 @@
     "retainedMsg": "Only the students that you have added will be kept since it is possible that you are linked to another teacher, however if the student remains inactive for 180 days, your account will be deleted."
   },
   "portfolio": {
-    "appMovil": "Mobile App",
-    "backend": "Backend Server",
-    "web": "Web App",
+    "APPMOVIL": "Mobile App",
+    "BACKEND": "Backend Server",
+    "WEB": "Web App",
     "url": "Open web",
     "docsUrl": "See docs",
     "github": "GitHub",

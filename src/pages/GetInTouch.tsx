@@ -26,7 +26,7 @@ export const GetInTouch = () => {
               <StyledTitle initial="Contact me" />
               <div className="pt--10 pr-0 pb-10 pl-0">
                 {socialMedia.map((social) => (
-                  <ContactButton socialMedia={social} />
+                  <ContactButton key={social} socialMedia={social} />
                 ))}
               </div>
             </div>

@@ -70,9 +70,9 @@
     "retainedMsg": "Se conservará únicamente los estudiantes que usted haya agregado ya que es posible que este vinculado con otro maestro, sin embargo si el estudiante mantiene inactividad por 180 días, se eliminará su cuenta."
   },
   "portfolio": {
-    "appMovil": "App móvil",
-    "backend": "Servidor Backend",
-    "web": "Aplicaciones Web",
+    "APPMOVIL": "App móvil",
+    "BACKEND": "Servidor Backend",
+    "WEB": "Aplicaciones Web",
     "url": "Abrir web",
     "docsUrl": "Ver documentación",
     "github": "GitHub",
