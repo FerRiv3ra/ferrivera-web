@@ -14,6 +14,7 @@ export const GetInTouch = () => {
     'linkedin',
     'twitter',
     'email',
+    'resume',
   ];
 
   return (

@@ -1,4 +1,9 @@
-export type socialMediaType = 'github' | 'linkedin' | 'twitter' | 'email';
+export type socialMediaType =
+  | 'github'
+  | 'linkedin'
+  | 'twitter'
+  | 'email'
+  | 'resume';
 
 export const useContact = (socialType: socialMediaType) => {
   const socialMedia = {
@@ -25,6 +30,12 @@ export const useContact = (socialType: socialMediaType) => {
       urlImg:
         'https://res.cloudinary.com/fercloudinary/image/upload/v1685557206/FerRivera%20Web/Logos/email_wzt66b.png',
       title: 'Email',
+    },
+    resume: {
+      url: 'https://drive.google.com/file/d/1vcENegEcgJp5ys6HIyZxj3YtY5qwa0H6/view?usp=drive_link',
+      urlImg:
+        'https://res.cloudinary.com/fercloudinary/image/upload/v1687992185/FerRivera%20Web/Logos/resume1_gp2o8q.png',
+      title: 'CV',
     },
   };
 

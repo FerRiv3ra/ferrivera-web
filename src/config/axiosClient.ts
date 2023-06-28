@@ -6,7 +6,7 @@ export interface CustomHeaders extends HeadersDefaults {
 
 export const axiosClient: AxiosInstance = axios.create({
   // baseURL: `https://checkstudents-backend-production.up.railway.app/api`,
-  baseURL: `https://${import.meta.env.VITE_BACKEND_URL!}/api`,
+  baseURL: `${import.meta.env.VITE_BACKEND_URL!}/api`,
   headers: {
     'Content-Type': 'application/json',
   },

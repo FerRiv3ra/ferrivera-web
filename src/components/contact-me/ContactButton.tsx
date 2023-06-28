@@ -26,6 +26,8 @@ export const ContactButton = ({ socialMedia }: Props) => {
             <p className="text-gray-600 text-md">
               {socialMedia === 'email'
                 ? t('contactMe.email')
+                : socialMedia === 'resume'
+                ? `${t('contactMe.resume')}`
                 : `${t('contactMe.social')} ${title}`}
             </p>
           </div>
