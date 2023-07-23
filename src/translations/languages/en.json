@@ -91,7 +91,8 @@
     "eCommerceBootCamp": "Features: User CRUD, Google authentication, role management, password recovery, Stripe payment management, image upload and email sending.",
     "theVineManager": "Web application to manage visits to the community cupboard and view reports.",
     "merakiWeb": "Web application to manage the web through administration panel, redemption and creation of coupons",
-    "ferriveraWeb": "This website, my portfolio"
+    "ferriveraWeb": "This website, my portfolio",
+    "pokemonNest": "First App learning NestJS"
   },
   "aboutMe": {
     "aboutMe": "About me",
