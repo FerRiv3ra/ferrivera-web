@@ -15,7 +15,10 @@ export interface Project {
   name: string;
   playstore?: string;
   technologies: string[];
-  textId?: string;
+  description: {
+    en: string;
+    es: string;
+  };
   uid: string;
   url?: string;
 }

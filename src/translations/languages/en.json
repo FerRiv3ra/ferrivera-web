@@ -80,20 +80,6 @@
     "appstore": "AppStore",
     "technologies": "Technologies"
   },
-  "projectDescription": {
-    "theVineApp": "Mobile app to manage community cupboard visits via QR codes.",
-    "iFootSchedule": "Application to follow the Champions League and World Cup soccer matches.",
-    "checkStudents": "Mobile application to verify student attendance using QR codes.",
-    "betterLists": "Mobile app to create two types of lists Shopping list: create and group by category, add price and get total, also sort by price or name; To-do list: no need to add categories and add a custom icon.",
-    "theVineBackend": "Features: CRUD for users, two-step verification for administrator login, password recovery, generate reports in PDF and XLXS, upload images and send reports via email.",
-    "checkStudentsBackend": "Features: CRUD for teachers and students, password recovery, generate reports in XLXS, send reports via email.",
-    "merakiBackend": "Features: user CRUD, role management, password recovery, coupon generation, image upload and email sending.",
-    "eCommerceBootCamp": "Features: User CRUD, Google authentication, role management, password recovery, Stripe payment management, image upload and email sending.",
-    "theVineManager": "Web application to manage visits to the community cupboard and view reports.",
-    "merakiWeb": "Web application to manage the web through administration panel, redemption and creation of coupons",
-    "ferriveraWeb": "This website, my portfolio",
-    "pokemonNest": "First App learning NestJS"
-  },
   "aboutMe": {
     "aboutMe": "About me",
     "description": "I am a highly skilled React Native and Node developer with more than 2 years of experience developing cross-platform mobile apps and web apps. I excel at mobile development using React Native with Javascript or Typescript, and have experience with back-end technologies like Express.js and MongoDB. I have solid knowledge in RESTful API. I am a dedicated problem solver and team player, with a passion for learning and staying up to date with the latest technologies."

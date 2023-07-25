@@ -80,20 +80,6 @@
     "appstore": "AppStore",
     "technologies": "Tecnologías"
   },
-  "projectDescription": {
-    "theVineApp": "Aplicación móvil para administrar las visitas al community cupboard mediante códigos QR.",
-    "iFootSchedule": "Aplicación para seguir los partidos de la liga de campeones y la copa mundial de fútbol.",
-    "checkStudents": "Aplicación móvil para verificación de asistencia de estudiantes mediante códigos QR.",
-    "betterLists": "Aplicación móvil para crear dos tipo de listas Lista de compras: crea y agrupa por categoría, agrega el precio y obtén el total, además ordena por precio o por nombre; Lista de cosas por hacer: no necesitas agregar categorías y agrega un ícono personalizado.",
-    "theVineBackend": "Características: CRUD de de usuarios, verificación en dos pasos para ingreso de administradores, recuperación de contraseña, generar reportes en PDF y XLXS, subida de imágenes y envío de reportes vía correo electrónico.",
-    "checkStudentsBackend": "Características: CRUD de de maestros y estudiantes, recuperación de contraseña, generar reportes en XLXS, envío de reportes vía correo electrónico.",
-    "merakiBackend": "Características: CRUD de de usuarios, manejo de roles, recuperación de contraseña, generación de cupones, subida de imágenes y envío de correos electrónicos.",
-    "eCommerceBootCamp": "Características: CRUD de de usuarios, autenticación con Google, manejo de roles, recuperación de contraseña, administración de pagos mediante Stripe, subida de imágenes y envío de correos electrónicos.",
-    "theVineManager": "Aplicación web para administrar las visitas al community cupboard y visualizar reportes.",
-    "merakiWeb": "Aplicación web para administrar la web mediante panel de administración, canje y creación de cupones",
-    "ferriveraWeb": "Ésta web, mi portafolio",
-    "pokemonNest": "Primer aplicación aprendiendo NestJS"
-  },
   "aboutMe": {
     "aboutMe": "Acerca de mí",
     "description": "Soy un desarrollador altamente calificado de React Native y Node con más de 2 años de experiencia en el desarrollo de aplicaciones móviles y aplicaciones web multiplataforma. Me destaco en el desarrollo móvil utilizando React Native con Javascript o Typescript, y tengo experiencia con tecnologías de back-end como Express.js y MongoDB. Tengo sólidos conocimientos en RESTful API. Soy un solucionador de problemas dedicado y un jugador de equipo, con pasión por aprender y estar al día con las últimas tecnologías."

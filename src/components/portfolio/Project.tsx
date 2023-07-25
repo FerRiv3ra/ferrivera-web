@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const Project = ({ project }: Props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -23,7 +23,9 @@ export const Project = ({ project }: Props) => {
         {project.name}
       </h2>
       <p className="text-base leading-relaxed mt-2">
-        {t(`projectDescription.${project.textId}`)}
+        {i18n.language === 'es'
+          ? project.description.es
+          : project.description.en}
       </p>
       <p className="text-gray-900 text-lg my-2">
         {t('portfolio.technologies')}:
