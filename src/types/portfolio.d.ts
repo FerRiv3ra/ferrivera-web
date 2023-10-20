@@ -2,8 +2,9 @@
 export type projectIdType = 'APPMOVIL' | 'BACKEND' | 'WEB';
 
 export interface PortfolioResponse {
-  ok: boolean;
-  projects: Project[];
+  record: {
+    projects: Project[];
+  };
 }
 
 export interface Project {

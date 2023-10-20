@@ -48,10 +48,16 @@ export const AppProvider = ({ children }: any) => {
   const getProjects = async () => {
     try {
       const { data } = await axiosClient.get<PortfolioResponse>(
-        '/portfolio/projects'
+        '/653254a054105e766fc4bbbd',
+        {
+          headers: {
+            'X-Access-Key': `$2a$10$zcagp9KCDv0MnsLo6gurd.${import.meta.env
+              .VITE_BACKEND_KEY!}`,
+          },
+        }
       );
 
-      setProjects(data.projects);
+      setProjects(data.record.projects);
       setLoading(false);
     } catch (error: any) {
       console.log(error);
