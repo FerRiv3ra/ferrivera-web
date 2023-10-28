@@ -1,12 +1,21 @@
+import { useContext } from 'react';
+import AppContext from '../context/AppContext';
+
 interface Props {
   initial: string;
   text?: string;
 }
 
 export const StyledTitle = ({ initial, text }: Props) => {
+  const { theme } = useContext(AppContext);
+
   return (
     <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-      <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+      <h2
+        className={`max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight ${
+          theme === 'light' ? 'text-gray-900' : 'text-gray-100'
+        } sm:text-4xl md:mx-auto`}
+      >
         <span className="relative inline-block">
           <svg
             viewBox="0 0 52 24"

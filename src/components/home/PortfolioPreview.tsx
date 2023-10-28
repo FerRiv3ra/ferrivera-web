@@ -1,22 +1,43 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useContext } from 'react';
+import AppContext from '../../context/AppContext';
 
 export const PortfolioPreview = () => {
   const { t } = useTranslation();
+  const { theme } = useContext(AppContext);
 
   return (
     <Link
-      className="relative block p-8 overflow-hidden border bg-white border-slate-100 rounded-lg ml-6 mr-6"
+      className={`relative block p-8 overflow-hidden border ${
+        theme === 'light'
+          ? 'bg-white border-slate-100'
+          : 'bg-gray-800 border-slate-800'
+      } rounded-lg ml-6 mr-6`}
       to="portfolio"
     >
-      <span className="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-slate-400 via-blue-500 to-blue-950"></span>
+      <span
+        className={`absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r ${
+          theme === 'light'
+            ? 'from-slate-400 via-blue-500 to-blue-950'
+            : 'from-slate-100 via-cyan-500 to-cyan-950'
+        }`}
+      ></span>
 
       <div className="justify-between sm:flex">
         <div>
-          <h5 className="text-xl font-bold text-slate-900">
+          <h5
+            className={`text-xl font-bold ${
+              theme === 'light' ? 'text-slate-900' : 'text-slate-100'
+            }`}
+          >
             {t('home.portTitle')}
           </h5>
-          <p className="mt-1 text-xs font-medium text-slate-600">
+          <p
+            className={`mt-1 text-xs font-medium ${
+              theme === 'light' ? 'text-slate-600' : 'text-slate-300'
+            }`}
+          >
             {t('home.portBy')}
           </p>
         </div>
@@ -31,12 +52,22 @@ export const PortfolioPreview = () => {
       </div>
 
       <div className="mt-4 sm:pr-8">
-        <p className="text-sm text-slate-500">{t('home.portDesc')}</p>
+        <p
+          className={`text-sm ${
+            theme === 'light' ? 'text-slate-500' : 'text-slate-200'
+          }`}
+        >
+          {t('home.portDesc')}
+        </p>
       </div>
 
       <dl className="flex mt-6">
         <div className="flex flex-col-reverse">
-          <dt className="text-sm font-medium text-slate-600">
+          <dt
+            className={`text-sm font-medium ${
+              theme === 'light' ? 'text-slate-600' : 'text-slate-200'
+            }`}
+          >
             {t('home.portClick')}
           </dt>
         </div>

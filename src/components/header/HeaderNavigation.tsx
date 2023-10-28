@@ -1,15 +1,21 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
 import { MobileMenu } from './MobileMenu';
 import { DesktopMenu } from './DesktopMenu';
+import AppContext from '../../context/AppContext';
 
 export const HeaderNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { theme } = useContext(AppContext);
 
   return (
-    <nav className="border-b fixed w-full bg-white top-0 z-50">
+    <nav
+      className={`border-b fixed ${
+        theme === 'light' ? 'bg-white' : 'bg-gray-800'
+      } w-full  top-0 z-50`}
+    >
       <div className="container px-6 py-6 mx-auto lg:flex lg:justify-between lg:items-center">
         <div className="flex items-center justify-between">
           <Link to="/">

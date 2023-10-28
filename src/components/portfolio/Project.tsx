@@ -2,6 +2,8 @@ import { useTranslation } from 'react-i18next';
 
 import { Button } from './Button';
 import { Project as ProjectType } from '../../types/portfolio';
+import { useContext } from 'react';
+import AppContext from '../../context/AppContext';
 
 interface Props {
   project: ProjectType;
@@ -9,6 +11,7 @@ interface Props {
 
 export const Project = ({ project }: Props) => {
   const { t, i18n } = useTranslation();
+  const { theme } = useContext(AppContext);
 
   return (
     <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -19,7 +22,11 @@ export const Project = ({ project }: Props) => {
           src={project.bannerUrl}
         />
       </div>
-      <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
+      <h2
+        className={`text-xl font-medium title-font ${
+          theme === 'light' ? 'text-gray-900' : 'text-white'
+        } mt-5`}
+      >
         {project.name}
       </h2>
       <p className="text-base leading-relaxed mt-2">
@@ -27,7 +34,11 @@ export const Project = ({ project }: Props) => {
           ? project.description.es
           : project.description.en}
       </p>
-      <p className="text-gray-900 text-lg my-2">
+      <p
+        className={`${
+          theme === 'light' ? 'text-gray-900' : 'text-white'
+        } text-lg my-2`}
+      >
         {t('portfolio.technologies')}:
       </p>
       <ul className="list-disc ml-5">

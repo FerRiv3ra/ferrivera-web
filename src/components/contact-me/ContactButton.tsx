@@ -2,12 +2,15 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { socialMediaType, useContact } from '../../hooks/useContact';
+import { useContext } from 'react';
+import AppContext from '../../context/AppContext';
 
 interface Props {
   socialMedia: socialMediaType;
 }
 
 export const ContactButton = ({ socialMedia }: Props) => {
+  const { theme } = useContext(AppContext);
   const { urlImg, title, url } = useContact(socialMedia);
   const { t } = useTranslation();
 
@@ -22,8 +25,18 @@ export const ContactButton = ({ socialMedia }: Props) => {
             />
           </div>
           <div className="mt-0 mr-0 mb-0 ml-4 flex-1 min-w-0">
-            <p className="text-lg font-bold text-gray-800 truncate">{title}</p>
-            <p className="text-gray-600 text-md">
+            <p
+              className={`text-lg font-bold ${
+                theme === 'light' ? 'text-gray-800' : 'text-gray-100'
+              } truncate`}
+            >
+              {title}
+            </p>
+            <p
+              className={`${
+                theme === 'light' ? 'text-gray-600' : 'text-gray-400'
+              } text-md`}
+            >
               {socialMedia === 'email'
                 ? t('contactMe.email')
                 : socialMedia === 'resume'
@@ -36,8 +49,12 @@ export const ContactButton = ({ socialMedia }: Props) => {
           <Link
             to={url}
             target="_blank"
-            className="bg-gray-800 pt-2 pr-6 pb-2 pl-6 text-lg font-medium text-gray-100 transition-all
-                    duration-200 hover:bg-gray-700 rounded-lg"
+            className={`${
+              theme === 'light'
+                ? 'bg-gray-800 text-gray-100 hover:bg-gray-700'
+                : 'bg-gray-100 text-gray-800 hover:bg-gray-400'
+            } pt-2 pr-6 pb-2 pl-6 text-lg font-medium transition-all
+                    duration-200 rounded-lg`}
           >
             {t('contactMe.open')}
           </Link>

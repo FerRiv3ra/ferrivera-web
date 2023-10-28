@@ -1,10 +1,13 @@
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 
 import { ContactButton } from '../components/contact-me/ContactButton';
 import { StyledTitle } from '../components/StyledTitle';
 import { socialMediaType } from '../hooks/useContact';
+import AppContext from '../context/AppContext';
 
 export const GetInTouch = () => {
+  const { theme } = useContext(AppContext);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -19,7 +22,11 @@ export const GetInTouch = () => {
 
   return (
     <div className="mt-12 lg:mt-10">
-      <div className="bg-white pt-12 pr-0 pb-12 pl-0 mt-0 mr-auto mb-0 ml-auto sm:py-16 lg:py-20">
+      <div
+        className={`${
+          theme === 'light' ? 'bg-white' : 'bg-gray-700'
+        } pt-12 pr-0 pb-12 pl-0 mt-0 mr-auto mb-0 ml-auto sm:py-16 lg:py-20`}
+      >
         <div className="pt-0 pr-4 pb-0 pl-4 mt-0 mr-auto mb-0 ml-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="pt-0 pr-4 pb-0 pl-4 mt-0 mr-auto mb-0 ml-auto max-w-4xl sm:px-6 lg:px-8">
             <div className="pt-0 pr-4 pb-0 pl-4 mt-0 mr-auto mb-0 ml-auto sm:flex sm:items-center sm:justify-between"></div>

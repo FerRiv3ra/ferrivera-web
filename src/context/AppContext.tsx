@@ -7,7 +7,9 @@ import { axiosClient } from '../config/axiosClient';
 type AppContextProps = {
   projects: Project[];
   loading: boolean;
+  theme: 'light' | 'dark';
   toggleLanguage: () => void;
+  toggleTheme: () => void;
 };
 
 const AppContext = createContext({} as AppContextProps);
@@ -15,6 +17,7 @@ const AppContext = createContext({} as AppContextProps);
 export const AppProvider = ({ children }: any) => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
     const userLangStg = localStorage.getItem('userLang');
@@ -26,6 +29,22 @@ export const AppProvider = ({ children }: any) => {
     } else {
       localStorage.setItem('navLang', navLang);
       i18n.changeLanguage(navLang);
+    }
+  }, []);
+
+  useEffect(() => {
+    const userThemeStg = localStorage.getItem('theme');
+
+    if (!!userThemeStg) {
+      setTheme(userThemeStg as 'dark' | 'light');
+    } else {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        localStorage.setItem('theme', 'dark');
+        setTheme('dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+        setTheme('light');
+      }
     }
   }, []);
 
@@ -42,6 +61,16 @@ export const AppProvider = ({ children }: any) => {
     } else {
       i18n.changeLanguage('es');
       localStorage.setItem('userLang', 'es');
+    }
+  };
+
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      setTheme('light');
+      localStorage.setItem('theme', 'light');
     }
   };
 
@@ -69,7 +98,9 @@ export const AppProvider = ({ children }: any) => {
       value={{
         projects,
         loading,
+        theme,
         toggleLanguage,
+        toggleTheme,
       }}
     >
       {children}
