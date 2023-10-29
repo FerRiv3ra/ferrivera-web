@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import { imgNameType, imgSelector } from '../../helpers/imgSelector';
+import { imgSelector } from '../../helpers/imgSelector';
+import { imgNameType } from '../../types/portfolio';
 
 interface Props {
   appTitle: imgNameType;

@@ -1,6 +1,8 @@
 import { useContext } from 'react';
-import { imgNameType, imgSelector } from '../../helpers/imgSelector';
+import { imgSelector } from '../../helpers/imgSelector';
+import { imgNameType } from '../../types/portfolio';
 import AppContext from '../../context/AppContext';
+import i18n from '../../translations/in18Config';
 
 interface Props {
   logoName: imgNameType;
@@ -8,6 +10,7 @@ interface Props {
 
 export const Tool = ({ logoName }: Props) => {
   const { img, title } = imgSelector(logoName);
+  const { language } = i18n;
   const { theme } = useContext(AppContext);
 
   return (
@@ -18,7 +21,9 @@ export const Tool = ({ logoName }: Props) => {
     >
       <img className="w-5 h-5 mx-3" src={img} />
 
-      <span className="mx-3">{title}</span>
+      <span className="mx-3">
+        {language === 'en' ? title : title.replace('and', 'y')}
+      </span>
     </div>
   );
 };

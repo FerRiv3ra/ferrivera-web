@@ -13,6 +13,7 @@ import { AppProvider } from './context/AppContext';
 import { AccountDeletion } from './pages/AccountDeletion';
 import { AboutMe } from './pages/AboutMe';
 import { DeletionIntructions } from './pages/DeletionIntructions';
+import { ProjectScreen } from './pages/ProjectScreen';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/" element={<PublicLayout />}>
               <Route index element={<MainScreen />} />
               <Route path="portfolio" element={<Portfolio />} />
+              <Route path="portfolio/:projectId" element={<ProjectScreen />} />
               <Route path="about-me" element={<AboutMe />} />
               <Route path="account-deletion" element={<AccountDeletion />} />
               <Route

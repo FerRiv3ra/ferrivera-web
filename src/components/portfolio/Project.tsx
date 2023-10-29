@@ -1,9 +1,11 @@
+import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 import { Button } from './Button';
 import { Project as ProjectType } from '../../types/portfolio';
-import { useContext } from 'react';
 import AppContext from '../../context/AppContext';
+import { Technology } from './Technology';
 
 interface Props {
   project: ProjectType;
@@ -12,9 +14,16 @@ interface Props {
 export const Project = ({ project }: Props) => {
   const { t, i18n } = useTranslation();
   const { theme } = useContext(AppContext);
+  const navigate = useNavigate();
 
   return (
-    <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
+    <button
+      type="button"
+      onClick={() => navigate(project.uid)}
+      className={`p-4 md:w-1/3 sm:mb-0 text-left mb-6 rounded ${
+        theme === 'light' ? 'hover:bg-cyan-100' : 'hover:bg-cyan-800'
+      }`}
+    >
       <div className="rounded-lg h-64 overflow-hidden">
         <img
           alt="content"
@@ -41,11 +50,11 @@ export const Project = ({ project }: Props) => {
       >
         {t('portfolio.technologies')}:
       </p>
-      <ul className="list-disc ml-5">
-        {project.technologies.map((tech) => (
-          <li key={tech}>{tech}</li>
+      <div className="flex justify-between flex-wrap">
+        {project.technologies.map((tech, index) => (
+          <Technology tech={tech} key={index} />
         ))}
-      </ul>
+      </div>
       <div className="flex flex-col w-full gap-y-5 mt-5">
         {project.github && <Button type="github" url={project.github} />}
         {project.url && <Button type="url" url={project.url} />}
@@ -55,6 +64,6 @@ export const Project = ({ project }: Props) => {
         )}
         {project.appstore && <Button type="appstore" url={project.appstore} />}
       </div>
-    </div>
+    </button>
   );
 };

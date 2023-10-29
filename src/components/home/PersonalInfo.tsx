@@ -1,16 +1,18 @@
+import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { Tool } from './Tool';
-import { imgNameType } from '../../helpers/imgSelector';
-import { useContext } from 'react';
 import AppContext from '../../context/AppContext';
+import { imgNameType } from '../../types/portfolio';
 
 export const PersonalInfo = () => {
   const tools: imgNameType[] = [
-    'react',
+    'reactRN',
     'typescript',
     'javascript',
     'node',
+    'nest',
+    'mongoDB',
     'git',
     'vsCode',
   ];

@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import { Logo } from './Logo';
-import { imgNameType } from '../../helpers/imgSelector';
 import { Links } from './Links';
 import { useContext } from 'react';
+import { imgNameType } from '../../types/portfolio';
 import AppContext from '../../context/AppContext';
 
 export const Footer = () => {

@@ -8,6 +8,8 @@ type AppContextProps = {
   projects: Project[];
   loading: boolean;
   theme: 'light' | 'dark';
+  getProject: (projectId: string) => Project;
+  getRelatedProjects: (title: string) => Project[];
   toggleLanguage: () => void;
   toggleTheme: () => void;
 };
@@ -93,12 +95,32 @@ export const AppProvider = ({ children }: any) => {
     }
   };
 
+  const getProject = (projectId: string) => {
+    return projects.filter((project) => project.uid === projectId)[0];
+  };
+
+  const getRelatedProjects = (projectId: string) => {
+    const title = getProject(projectId).name;
+
+    const keyword = title.toLowerCase().startsWith('the')
+      ? title.split(' ')[1]
+      : title.split(' ')[0];
+
+    const relatedProjects = projects.filter((project) =>
+      project.name.toLowerCase().includes(keyword.toLowerCase())
+    );
+
+    return relatedProjects;
+  };
+
   return (
     <AppContext.Provider
       value={{
         projects,
         loading,
+        getProject,
         theme,
+        getRelatedProjects,
         toggleLanguage,
         toggleTheme,
       }}

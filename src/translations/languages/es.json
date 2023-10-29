@@ -72,10 +72,11 @@
   "portfolio": {
     "APPMOVIL": "App móvil",
     "BACKEND": "Servidor Backend",
-    "WEB": "Aplicaciones Web",
+    "WEB": "Aplicación Web",
     "url": "Abrir web",
     "docsUrl": "Ver documentación",
     "github": "GitHub",
+    "screenshots": "Capturas",
     "playstore": "PlayStore",
     "appstore": "AppStore",
     "technologies": "Tecnologías"

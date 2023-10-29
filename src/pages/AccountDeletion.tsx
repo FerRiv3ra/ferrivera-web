@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { StyledTitle } from '../components/StyledTitle';
 import { AppCard } from '../components/account-deletion/AppCard';
-import { imgNameType } from '../helpers/imgSelector';
+import { imgNameType } from '../types/portfolio';
 
 export const AccountDeletion = () => {
   const apps: imgNameType[] = ['theVineApp', 'checkStudents'];

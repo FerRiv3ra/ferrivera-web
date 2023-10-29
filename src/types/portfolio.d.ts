@@ -15,7 +15,7 @@ export interface Project {
   github?: string;
   name: string;
   playstore?: string;
-  technologies: string[];
+  technologies: imgNameType[];
   description: {
     en: string;
     es: string;
@@ -23,3 +23,37 @@ export interface Project {
   uid: string;
   url?: string;
 }
+
+export type imgNameType =
+  | 'axios'
+  | 'checkStudents'
+  | 'docker'
+  | 'express'
+  | 'fontAwesome'
+  | 'gestureHandler'
+  | 'git'
+  | 'github'
+  | 'i18next'
+  | 'javascript'
+  | 'jwt'
+  | 'linkedin'
+  | 'mongoDB'
+  | 'mongoose'
+  | 'nest'
+  | 'node'
+  | 'postgreSQL'
+  | 'react'
+  | 'reactNative'
+  | 'reactRN'
+  | 'reactNavigation'
+  | 'reactRouter'
+  | 'realm'
+  | 'sockets'
+  | 'stripe'
+  | 'tailwind'
+  | 'theVineApp'
+  | 'twitter'
+  | 'typeorm'
+  | 'typescript'
+  | 'vectorIcons'
+  | 'vsCode';

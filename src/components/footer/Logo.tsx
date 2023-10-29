@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { imgNameType, imgSelector } from '../../helpers/imgSelector';
+import { imgSelector } from '../../helpers/imgSelector';
+import { imgNameType } from '../../types/portfolio';
 
 interface Props {
   logoName: imgNameType;
