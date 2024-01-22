@@ -32,7 +32,7 @@ export const useContact = (socialType: socialMediaType) => {
       title: 'Email',
     },
     resume: {
-      url: 'https://drive.google.com/file/d/1ECwUoLj8UIAwXmkq1GJoRsvzc9qaZUla/view?usp=drive_link',
+      url: `${import.meta.env.VITE_RESUME_URL!}`,
       urlImg:
         'https://res.cloudinary.com/fercloudinary/image/upload/v1687992185/FerRivera%20Web/Logos/resume1_gp2o8q.png',
       title: 'CV',
