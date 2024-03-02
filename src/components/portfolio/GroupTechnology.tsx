@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
 
-import { Project } from './Project';
-import { projectIdType } from '../../types/portfolio';
 import { useContext } from 'react';
 import AppContext from '../../context/AppContext';
+import { projectIdType } from '../../types/portfolio';
+import { Project } from './Project';
 
 interface Props {
   groupProject: projectIdType;
@@ -42,7 +42,7 @@ export const GroupTechnology = ({ groupProject }: Props) => {
             </h2>
           </div>
         </div>
-        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div className="flex flex-wrap items-start sm:-m-4 -mx-4 -mb-10 -mt-4">
           {projects.map((project) => {
             if (project.category === groupProject)
               return <Project project={project} key={project.uid} />;

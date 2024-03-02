@@ -2,9 +2,9 @@ import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
-import { Button } from './Button';
-import { Project as ProjectType } from '../../types/portfolio';
 import AppContext from '../../context/AppContext';
+import { Project as ProjectType } from '../../types/portfolio';
+import { Button } from './Button';
 import { Technology } from './Technology';
 
 interface Props {
@@ -38,10 +38,14 @@ export const Project = ({ project }: Props) => {
       >
         {project.name}
       </h2>
-      <p className="text-base leading-relaxed mt-2">
+      <p className="text-base leading-relaxed mt-2 h-20">
         {i18n.language === 'es'
-          ? project.description.es
-          : project.description.en}
+          ? `${project.description.es.slice(0, 125)}${
+              project.description.es.length > 125 ? '...' : ''
+            }`
+          : `${project.description.en.slice(0, 125)}${
+              project.description.en.length > 125 ? '...' : ''
+            }`}
       </p>
       <p
         className={`${

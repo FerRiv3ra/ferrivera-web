@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
-import { Logo } from './Logo';
-import { Links } from './Links';
 import { useContext } from 'react';
-import { imgNameType } from '../../types/portfolio';
 import AppContext from '../../context/AppContext';
+import { imgNameType } from '../../types/portfolio';
+import { Links } from './Links';
+import { Logo } from './Logo';
 
 export const Footer = () => {
   const logos: imgNameType[] = ['github', 'linkedin', 'twitter'];
@@ -50,8 +50,7 @@ export const Footer = () => {
                 theme === 'light' ? 'text-gray-800' : 'text-gray-100'
               } font-semibold py-1`}
             >
-              {t('footer.copyright')} ©{' '}
-              <span id="get-current-year">{new Date().getFullYear()}</span>
+              {t('footer.copyright')} © <span id="get-current-year">2020</span>
               <Link
                 to={'/'}
                 className={`${
