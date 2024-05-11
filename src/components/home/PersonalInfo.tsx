@@ -1,9 +1,8 @@
-import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Tool } from './Tool';
-import AppContext from '../../context/AppContext';
+import { useAppContext } from '../../context/AppContext';
 import { imgNameType } from '../../types/portfolio';
+import { Tool } from './Tool';
 
 export const PersonalInfo = () => {
   const tools: imgNameType[] = [
@@ -18,7 +17,7 @@ export const PersonalInfo = () => {
   ];
 
   const { t } = useTranslation();
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
 
   return (
     <div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">

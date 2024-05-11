@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { useContext } from 'react';
-import AppContext from '../../context/AppContext';
+import { Link } from 'react-router-dom';
+import { useAppContext } from '../../context/AppContext';
 
 export const PortfolioPreview = () => {
   const { t } = useTranslation();
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
 
   return (
     <Link

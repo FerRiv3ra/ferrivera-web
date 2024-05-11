@@ -2,11 +2,10 @@ import { Outlet } from 'react-router-dom';
 
 import { Footer } from '../components/footer/Footer';
 import { Header } from '../components/header/Header';
-import { useContext } from 'react';
-import AppContext from '../context/AppContext';
+import { useAppContext } from '../context/AppContext';
 
 const PublicLayout = () => {
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
   return (
     <>
       <div className={`${theme === 'light' ? 'bg-white' : 'bg-gray-700'}`}>

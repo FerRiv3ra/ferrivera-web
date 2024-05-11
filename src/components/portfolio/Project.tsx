@@ -1,8 +1,7 @@
-import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
-import AppContext from '../../context/AppContext';
+import { useAppContext } from '../../context/AppContext';
 import { Project as ProjectType } from '../../types/portfolio';
 import { Button } from './Button';
 import { Technology } from './Technology';
@@ -13,7 +12,7 @@ interface Props {
 
 export const Project = ({ project }: Props) => {
   const { t, i18n } = useTranslation();
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
   const navigate = useNavigate();
 
   return (

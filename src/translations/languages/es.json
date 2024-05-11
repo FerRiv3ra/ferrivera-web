@@ -7,13 +7,14 @@
   },
   "home": {
     "desc": "Soy un desarrollador altamente calificado de React Native y Node, aquí está mi kit de herramientas.",
-    "title": "Desarrollador móvil fullstack",
     "githubStats": "Estadísticas de GitHub",
-    "portTitle": "Te invito a ver mi Portafolio",
-    "usefulGists": "Gists Útiles",
     "portBy": "Por FerRivera",
+    "portClick": "Haga clic en esta tajeta para ver el portafolio",
     "portDesc": "A través del tiempo que llevo en desarrollo, he realizado algunos proyectos de práctica, freelace y algunos personales.",
-    "portClick": "Haga clic en esta tajeta para ver el portafolio"
+    "portTitle": "Te invito a ver mi Portafolio",
+    "rnLibraries": "Librerías React Native",
+    "title": "Desarrollador móvil fullstack",
+    "usefulGists": "Gists Útiles"
   },
   "footer": {
     "findMe": "Encuéntrame en cualquiera de estas plataformas.",

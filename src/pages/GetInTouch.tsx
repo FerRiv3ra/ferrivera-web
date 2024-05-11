@@ -1,12 +1,12 @@
-import { useContext, useEffect } from 'react';
+import { useEffect } from 'react';
 
-import { ContactButton } from '../components/contact-me/ContactButton';
 import { StyledTitle } from '../components/StyledTitle';
+import { ContactButton } from '../components/contact-me/ContactButton';
+import { useAppContext } from '../context/AppContext';
 import { socialMediaType } from '../hooks/useContact';
-import AppContext from '../context/AppContext';
 
 export const GetInTouch = () => {
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
 
   useEffect(() => {
     window.scrollTo(0, 0);

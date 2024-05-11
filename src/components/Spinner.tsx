@@ -1,8 +1,7 @@
-import { useContext } from 'react';
-import AppContext from '../context/AppContext';
+import { useAppContext } from '../context/AppContext';
 
 export const Spinner = () => {
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
   return (
     <div className="p-20 mt-20 flex flex-1 items-center justify-center">
       <div

@@ -1,9 +1,7 @@
-import { useContext } from 'react';
-
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
-import AppContext from '../../context/AppContext';
+import { useAppContext } from '../../context/AppContext';
 
 interface Props {
   isOpen: boolean;
@@ -14,7 +12,7 @@ export const DesktopMenu = ({ isOpen }: Props) => {
 
   const currentLang = i18n.language;
 
-  const { toggleLanguage, theme, toggleTheme } = useContext(AppContext);
+  const { toggleLanguage, theme, toggleTheme } = useAppContext();
 
   return (
     <div

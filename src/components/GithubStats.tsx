@@ -1,12 +1,12 @@
-import { useContext } from 'react';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
-import AppContext from '../context/AppContext';
+import { useAppContext } from '../context/AppContext';
+import { RNLibraries } from './RNLibraries';
 import { UsefulGists } from './UsefulGists';
 
 export const GithubStats = () => {
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
   const { t } = useTranslation();
 
   return (
@@ -39,6 +39,14 @@ export const GithubStats = () => {
           />
         </Link>
       </div>
+      <h2
+        className={`text-xl font-semibold text-center mb-5 tracking-wide ${
+          theme === 'light' ? 'text-gray-800' : 'text-gray-200'
+        } lg:text-4xl`}
+      >
+        {t('home.rnLibraries')}
+      </h2>
+      <RNLibraries />
       <h2
         className={`text-xl font-semibold text-center mb-5 tracking-wide ${
           theme === 'light' ? 'text-gray-800' : 'text-gray-200'

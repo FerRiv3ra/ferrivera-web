@@ -1,8 +1,7 @@
-import { useContext } from 'react';
+import { useAppContext } from '../../context/AppContext';
 import { imgSelector } from '../../helpers/imgSelector';
-import { imgNameType } from '../../types/portfolio';
-import AppContext from '../../context/AppContext';
 import i18n from '../../translations/in18Config';
+import { imgNameType } from '../../types/portfolio';
 
 interface Props {
   logoName: imgNameType;
@@ -11,7 +10,7 @@ interface Props {
 export const Tool = ({ logoName }: Props) => {
   const { img, title } = imgSelector(logoName);
   const { language } = i18n;
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
 
   return (
     <div

@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import { useContext } from 'react';
-import AppContext from '../../context/AppContext';
+import { useAppContext } from '../../context/AppContext';
 import { projectIdType } from '../../types/portfolio';
 import { Project } from './Project';
 
@@ -11,7 +10,7 @@ interface Props {
 
 export const GroupTechnology = ({ groupProject }: Props) => {
   const { t } = useTranslation();
-  const { projects, theme } = useContext(AppContext);
+  const { projects, theme } = useAppContext();
 
   return (
     <section

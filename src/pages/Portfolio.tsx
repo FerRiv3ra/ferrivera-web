@@ -1,16 +1,16 @@
-import { useContext, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import { useTranslation } from 'react-i18next';
 
+import { Spinner } from '../components/Spinner';
 import { StyledTitle } from '../components/StyledTitle';
 import { GroupTechnology } from '../components/portfolio/GroupTechnology';
-import AppContext from '../context/AppContext';
-import { Spinner } from '../components/Spinner';
+import { useAppContext } from '../context/AppContext';
 import { projectIdType } from '../types/portfolio';
 
 export const Portfolio = () => {
   const { t } = useTranslation();
-  const { loading } = useContext(AppContext);
+  const { loading } = useAppContext();
 
   useEffect(() => {
     window.scrollTo(0, 0);

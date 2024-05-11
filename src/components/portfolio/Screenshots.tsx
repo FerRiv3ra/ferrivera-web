@@ -1,6 +1,5 @@
-import { useContext } from 'react';
-import AppContext from '../../context/AppContext';
 import { useTranslation } from 'react-i18next';
+import { useAppContext } from '../../context/AppContext';
 import { Carousel } from './Carousel';
 
 interface Props {
@@ -8,7 +7,7 @@ interface Props {
 }
 
 export const Screenshots = ({ images }: Props) => {
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
   const { t } = useTranslation();
 
   return (

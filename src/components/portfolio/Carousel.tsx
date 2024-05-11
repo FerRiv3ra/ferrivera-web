@@ -1,5 +1,5 @@
-import { useContext, useState } from 'react';
-import AppContext from '../../context/AppContext';
+import { useState } from 'react';
+import { useAppContext } from '../../context/AppContext';
 
 interface Props {
   images: string[];
@@ -7,7 +7,7 @@ interface Props {
 
 export const Carousel = ({ images }: Props) => {
   const [visible, setVisible] = useState(0);
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
 
   const handleChange = (type: 'less' | 'add') => {
     if (type === 'add') {
@@ -61,6 +61,7 @@ export const Carousel = ({ images }: Props) => {
         {images.map((_, index) => (
           <button
             type="button"
+            key={index}
             className={`w-3 h-3 rounded-full ${
               visible === index
                 ? colors.bgIndicator.selected

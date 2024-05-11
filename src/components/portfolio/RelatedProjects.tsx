@@ -1,15 +1,14 @@
-import { useContext } from 'react';
-import AppContext from '../../context/AppContext';
+import { useTranslation } from 'react-i18next';
+import { useAppContext } from '../../context/AppContext';
 import { Project } from '../../types/portfolio';
 import { Technology } from './Technology';
-import { useTranslation } from 'react-i18next';
 
 interface Props {
   project: Project;
 }
 
 export const RelatedProjects = ({ project }: Props) => {
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
   const { t } = useTranslation();
 
   return (

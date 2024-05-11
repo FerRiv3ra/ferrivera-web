@@ -1,8 +1,8 @@
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 
+import { axiosClient } from '../config/axiosClient';
 import i18n from '../translations/in18Config';
 import { PortfolioResponse, Project } from '../types/portfolio';
-import { axiosClient } from '../config/axiosClient';
 
 type AppContextProps = {
   projects: Project[];
@@ -106,9 +106,11 @@ export const AppProvider = ({ children }: any) => {
       ? title.split(' ')[1]
       : title.split(' ')[0];
 
-    const relatedProjects = projects.filter((project) =>
-      project.name.toLowerCase().includes(keyword.toLowerCase())
-    );
+    const relatedProjects = title.startsWith('RN')
+      ? [getProject(projectId)]
+      : projects.filter((project) =>
+          project.name.toLowerCase().includes(keyword.toLowerCase())
+        );
 
     return relatedProjects;
   };
@@ -131,3 +133,13 @@ export const AppProvider = ({ children }: any) => {
 };
 
 export default AppContext;
+
+export const useAppContext = () => {
+  const context = useContext(AppContext);
+
+  if (!context) {
+    throw new Error('AppContext must be used within a AppProvider');
+  }
+
+  return context;
+};

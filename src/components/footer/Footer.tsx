@@ -1,15 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
-import { useContext } from 'react';
-import AppContext from '../../context/AppContext';
+import { useAppContext } from '../../context/AppContext';
 import { imgNameType } from '../../types/portfolio';
 import { Links } from './Links';
 import { Logo } from './Logo';
 
 export const Footer = () => {
   const logos: imgNameType[] = ['github', 'linkedin', 'twitter'];
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
 
   const { t } = useTranslation();
 

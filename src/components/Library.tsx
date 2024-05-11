@@ -2,22 +2,22 @@ import { Link } from 'react-router-dom';
 import { useAppContext } from '../context/AppContext';
 
 type Props = {
-  gistId: string;
+  libraryId: string;
 };
 
-export const Gist = ({ gistId }: Props) => {
+export const Library = ({ libraryId }: Props) => {
   const { theme } = useAppContext();
 
   return (
     <Link
       className="mb-5"
-      to={`https://gist.github.com/FerRiv3ra/${gistId}`}
+      to={`https://github.com/FerRiv3ra/${libraryId}`}
       target="_blank"
     >
       <img
         loading="lazy"
         height="180em"
-        src={`https://github-readme-stats.vercel.app/api/gist?id=${gistId}&show_owner=true&theme=${
+        src={`https://github-readme-stats.vercel.app/api/pin/?username=FerRiv3ra&repo=${libraryId}&show_owner=true&theme=${
           theme === 'dark' ? 'react' : 'default'
         }`}
       />

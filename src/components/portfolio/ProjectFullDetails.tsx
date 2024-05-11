@@ -2,8 +2,8 @@ import i18n from '../../translations/in18Config';
 import { Project } from '../../types/portfolio';
 import { StyledTitle } from '../StyledTitle';
 import { BannerAndTitle } from './BannerAndTitle';
-import { Screenshots } from './Screenshots';
 import { RelatedProjects } from './RelatedProjects';
+import { Screenshots } from './Screenshots';
 
 interface Props {
   relatedProjects: Project[];

@@ -1,5 +1,4 @@
-import { useContext } from 'react';
-import AppContext from '../../context/AppContext';
+import { useAppContext } from '../../context/AppContext';
 
 interface Props {
   imageSrc: string;
@@ -7,7 +6,7 @@ interface Props {
 }
 
 export const BannerAndTitle = ({ imageSrc, description }: Props) => {
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
 
   return (
     <>

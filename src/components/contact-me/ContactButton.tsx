@@ -1,16 +1,15 @@
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
+import { useAppContext } from '../../context/AppContext';
 import { socialMediaType, useContact } from '../../hooks/useContact';
-import { useContext } from 'react';
-import AppContext from '../../context/AppContext';
 
 interface Props {
   socialMedia: socialMediaType;
 }
 
 export const ContactButton = ({ socialMedia }: Props) => {
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
   const { urlImg, title, url } = useContact(socialMedia);
   const { t } = useTranslation();
 

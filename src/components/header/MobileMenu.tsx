@@ -1,12 +1,11 @@
-import { useContext } from 'react';
-import AppContext from '../../context/AppContext';
+import { useAppContext } from '../../context/AppContext';
 
 interface Props {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
 }
 export const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
 
   return (
     <div className="flex lg:hidden">

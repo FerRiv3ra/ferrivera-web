@@ -1,18 +1,18 @@
-import { useContext, useEffect, useState } from 'react';
-import { Project } from '../types/portfolio';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import AppContext from '../context/AppContext';
+import { useAppContext } from '../context/AppContext';
 import {
   ImagesCollection,
   carouselSelector,
 } from '../helpers/carouselSelector';
 import { sortProyects } from '../helpers/sortProyects';
+import { Project } from '../types/portfolio';
 
 export const useProjectScreen = () => {
   const [project, setProject] = useState<Project>();
   const [relatedProjects, setRelatedProjects] = useState<Project[]>([]);
   const { projectId } = useParams();
-  const { getProject, getRelatedProjects, projects } = useContext(AppContext);
+  const { getProject, getRelatedProjects, projects } = useAppContext();
 
   const keyword = project?.name.toLowerCase().startsWith('the')
     ? project.name.toLowerCase().split(' ')[1]

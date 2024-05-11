@@ -1,14 +1,14 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { MobileMenu } from './MobileMenu';
+import { useAppContext } from '../../context/AppContext';
 import { DesktopMenu } from './DesktopMenu';
-import AppContext from '../../context/AppContext';
+import { MobileMenu } from './MobileMenu';
 
 export const HeaderNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
 
   return (
     <nav

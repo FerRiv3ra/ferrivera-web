@@ -1,5 +1,4 @@
-import { useContext } from 'react';
-import AppContext from '../context/AppContext';
+import { useAppContext } from '../context/AppContext';
 
 interface Props {
   initial: string;
@@ -7,7 +6,7 @@ interface Props {
 }
 
 export const StyledTitle = ({ initial, text }: Props) => {
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
 
   return (
     <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">

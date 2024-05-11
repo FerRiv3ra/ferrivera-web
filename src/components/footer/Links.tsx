@@ -1,11 +1,10 @@
-import { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import AppContext from '../../context/AppContext';
+import { useAppContext } from '../../context/AppContext';
 
 export const Links = () => {
   const { t } = useTranslation();
-  const { theme } = useContext(AppContext);
+  const { theme } = useAppContext();
 
   return (
     <div className="flex flex-wrap items-top mb-6">
